@@ -1,0 +1,8 @@
+cd %project%
+cabal sandbox init
+? cabal update ?
+cabal install --dependencies-only
+cabal run -- %num_cols% %num_rows%
+
+w,a,s,d - obvious
+q - quit
