@@ -1,0 +1,21 @@
+
+name:                yahio2048
+version:             0.1.0.0
+synopsis:            2048 clone
+
+license:             MIT
+license-file:        LICENSE
+author:              oddsome
+maintainer:          odd@some
+
+category:            Game
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+executable yahio2048
+  main-is:             Main.hs
+  ghc-options:         -O3 -threaded -rtsopts -with-rtsopts=-N -Wall
+  build-depends:       base, array, ansi-terminal, random
+  hs-source-dirs:      src
+  default-language:    Haskell2010
